@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block initscripts %}
+<script src='javascripts/init-juniper-datatable.js'></script>
+{% endblock %}
+
+{% block table %}
+<table id='juniper-table' class='display'>
+<thead>
+			<tr>
+				<th>script_name</th>
+				<th>path</th>
+				<th>RLI</th>
+				<th>TPI</th>
+				<th>PR</th>
+				<th>protocol</th>
+				<th>subareas</th>
+
+			</tr>
+			<tr id="filterrow">
+				<th>script_name</th>
+				<th>path</th>
+				<th>RLI</th>
+				<th>TPI</th>
+				<th>PR</th>
+				<th>protocol</th>
+				<th>subareas</th>
+			</tr>
+		</thead>
+		<tfoot>
+			<tr>
+				<th>script_name</th>
+				<th>path</th>
+				<th>RLI</th>
+				<th>TPI</th>
+				<th>PR</th>
+				<th>protocol</th>
+				<th>subareas</th>
+			</tr>
+		</tfoot>
+</table>
+{% endblock %}
